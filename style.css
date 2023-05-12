@@ -124,8 +124,7 @@ body {
     margin-bottom: 30px;
 }
 
-.btn-download,
-.btn-download2 {
+.btn-download {
     display: inline-block;
     background-color: #c09236;
     color: white;
@@ -134,6 +133,7 @@ body {
     padding: 15px 30px;
     border-radius: 5px;
     transition: all 0.3s ease;
+    margin:7px 7px 0 0;
 }
 
 .btn-download:hover {
