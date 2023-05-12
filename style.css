@@ -29,9 +29,11 @@ body {
     color: #727272;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active, navbar-toggler:focus-visible {
-    box-shadow:none;
-    border:none;
+.navbar-toggler:focus,
+.navbar-toggler:active,
+navbar-toggler:focus-visible {
+    box-shadow: none;
+    border: none;
 }
 
 .infos {
@@ -133,7 +135,7 @@ body {
     padding: 15px 30px;
     border-radius: 5px;
     transition: all 0.3s ease;
-    margin:7px 7px 0 0;
+    margin: 7px 7px 0 0;
 }
 
 .btn-download:hover {
