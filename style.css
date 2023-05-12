@@ -1,0 +1,169 @@
+:root {
+    --card-shadow: #0e0d0d;
+}
+
+html,
+body {
+    background-color: rgb(15, 15, 15);
+    font-family: JetBrains Mono, monospace;
+    color: #e4bb68;
+}
+
+#sidebar {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .container-fluid {
+    margin: 20px 10px;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #727272;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active, navbar-toggler:focus-visible {
+    box-shadow:none;
+    border:none;
+}
+
+.infos {
+    margin: 80px;
+}
+
+.cards {
+    perspective: 600px !important;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.card {
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    width: 200px;
+    height: 300px;
+    transform: translate3d(0, 0, 0);
+    margin: 30px 25px 0 0;
+}
+
+.card__title {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card__subtitle {
+    margin-top: 30px;
+}
+
+.card_skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 0;
+}
+
+.card_skills i {
+    margin: 15px;
+    font-size: 25px;
+}
+
+.card__content {
+    margin: 20px
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 20px 50px 20px 50px;
+    position: fixed;
+    bottom: 0;
+    margin: 20px;
+    background-color: var(--card-btn);
+    transition: background-color 0.3s;
+    color: #727272;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: var(--card-btnh);
+    transition: background-color 0.3s,
+        color 0.3s;
+    color: var(--card-btnch);
+    cursor: pointer;
+}
+
+.download-section {
+    color: #fff;
+    margin-top: 100px;
+}
+
+.download-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.download-section p {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.btn-download,
+.btn-download2 {
+    display: inline-block;
+    background-color: #c09236;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #d4ad5f;
+    color: white;
+}
+
+
+@keyframes rotate {
+
+    from,
+    to {
+        box-shadow:
+            0 0 0 var(--card-shadow),
+            0.1rem 0 0 var(--card-shadow),
+            -0.2rem 0 0.75rem 0 hsla(0, 0%, 0%, 0.3);
+    }
+
+    25%,
+    75% {
+        box-shadow:
+            0 0 0 var(--card-shadow),
+            0 0 0 var(--card-shadow),
+            -0.25rem -0.05rem 1rem 0.15rem hsla(0, 0%, 0%, 0.3);
+    }
+
+    50% {
+        box-shadow:
+            -0.1rem 0 0 var(--card-shadow),
+            0 0 0 var(--card-shadow),
+            -0.3rem -0.1rem 1.5rem 0.3rem var(--card-shadow);
+    }
+}
